@@ -12,6 +12,6 @@ function Get-MxAgReplicaStatus
     Process
     {
         $sql=Get-SqlInstance -ServerInstance $ComputerName
-        ($sql.AvailabilityGroups).AvailabilityReplicas | Select-Object @{N='AvailabilityGroup';E={$_.Parent}}, @{N='ReplicaName';E={$_.Name}}, Role, RollupSynchronizationstate, FailoverMode, AvailabilityMode 
+        ($sql.AvailabilityGroups).AvailabilityReplicas | Where-Object {$_.Role -ne "UNKNOWN"} | Select-Object @{N='AvailabilityGroup';E={$_.Parent}}, @{N='ReplicaName';E={$_.Name}}, Role, RollupSynchronizationstate, FailoverMode, AvailabilityMode 
     }
 }
