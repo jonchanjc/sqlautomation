@@ -14,6 +14,8 @@ function Get-MxAgReplicaStatus
 
     Process
     {
+        $PSDefaultParameterValues = @{"Format-Table:Autosize"=$true}
+
         if ($Credential) {
             $sql=Get-SqlInstance -ServerInstance $ComputerName -Credential $Credential
         }
@@ -21,7 +23,7 @@ function Get-MxAgReplicaStatus
             $sql=Get-SqlInstance -ServerInstance $ComputerName
         }
         
-        ($sql.AvailabilityGroups).AvailabilityReplicas | Where-Object {$_.Role -ne "UNKNOWN"} | Select-Object @{N='AvailabilityGroup';E={$_.Parent}}, @{N='ReplicaName';E={$_.Name}}, Role, RollupSynchronizationstate, FailoverMode, AvailabilityMode 
+        ($sql.AvailabilityGroups).AvailabilityReplicas | Where-Object {$_.Role -ne "UNKNOWN" -and $_.OperationalState -ne "Unknown"} | Select-Object @{N='AvailabilityGroup';E={$_.Parent}}, @{N='ReplicaName';E={$_.Name}}, Role, OperationalState, RollupSynchronizationstate, FailoverMode, AvailabilityMode 
     }
 
 <#
@@ -38,8 +40,12 @@ This eliminates the bottleneck from waiting for DBA to provide the information.
 The server name of the SQL Server replica
 
 .EXAMPLE
-
 Get-MxAgReplicaStatus -ComputerName SQLV-URTSI05
+Getting status for a single computer
+
+.EXAMPLE
+"SQLV-URTSI05","SQLV-URTSI06", "SQLV-URTSI07" | Get-MxAgReplicaStatus
+Piping multiple servernames to the cmdlet
 #>
 
 }
