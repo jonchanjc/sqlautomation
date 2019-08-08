@@ -5,7 +5,8 @@ function Get-MxAgReplicaStatus
 {
     [CmdletBinding()]
     Param(
-        [Parameter(Mandatory=$true)]
+        [Parameter(Mandatory=$true,
+        ValueFromPipeline=$true)]
         [string] $ComputerName,
         [Parameter(Mandatory=$false)]
         [pscredential] $Credential
