@@ -38,11 +38,11 @@ This eliminates the bottleneck from waiting for DBA to provide the information.
 The server name of the SQL Server replica
 
 .EXAMPLE
-Get-MxAgReplicaStatus -ComputerName SQLV-URTSI05
+Get-MxAgReplicaStatus -ComputerName SQL01
 Getting status for a single computer
 
 .EXAMPLE
-"SQLV-URTSI05","SQLV-URTSI06", "SQLV-URTSI07" | Get-MxAgReplicaStatus
+"SQL01","SQL02", "SQL03" | Get-MxAgReplicaStatus
 Piping multiple servernames to the cmdlet
 #>
 
