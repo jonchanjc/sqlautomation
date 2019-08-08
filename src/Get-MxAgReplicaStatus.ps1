@@ -14,8 +14,6 @@ function Get-MxAgReplicaStatus
 
     Process
     {
-        $PSDefaultParameterValues = @{"Format-Table:Autosize"=$true}
-
         if ($Credential) {
             $sql=Get-SqlInstance -ServerInstance $ComputerName -Credential $Credential
         }
