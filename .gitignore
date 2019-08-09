@@ -4,7 +4,10 @@
 ## Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 
 # User-specific files
+<<<<<<< HEAD
 *.rsuser
+=======
+>>>>>>> 77dd8fb71b334bd07ce880a0de69391b768348eb
 *.suo
 *.user
 *.userosscache
@@ -13,9 +16,12 @@
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
 
+<<<<<<< HEAD
 # Mono auto generated files
 mono_crash.*
 
+=======
+>>>>>>> 77dd8fb71b334bd07ce880a0de69391b768348eb
 # Build results
 [Dd]ebug/
 [Dd]ebugPublic/
@@ -23,8 +29,11 @@ mono_crash.*
 [Rr]eleases/
 x64/
 x86/
+<<<<<<< HEAD
 [Aa][Rr][Mm]/
 [Aa][Rr][Mm]64/
+=======
+>>>>>>> 77dd8fb71b334bd07ce880a0de69391b768348eb
 bld/
 [Bb]in/
 [Oo]bj/
@@ -42,10 +51,16 @@ Generated\ Files/
 [Tt]est[Rr]esult*/
 [Bb]uild[Ll]og.*
 
+<<<<<<< HEAD
 # NUnit
 *.VisualState.xml
 TestResult.xml
 nunit-*.xml
+=======
+# NUNIT
+*.VisualState.xml
+TestResult.xml
+>>>>>>> 77dd8fb71b334bd07ce880a0de69391b768348eb
 
 # Build Results of an ATL Project
 [Dd]ebugPS/
@@ -59,6 +74,10 @@ BenchmarkDotNet.Artifacts/
 project.lock.json
 project.fragment.lock.json
 artifacts/
+<<<<<<< HEAD
+=======
+**/Properties/launchSettings.json
+>>>>>>> 77dd8fb71b334bd07ce880a0de69391b768348eb
 
 # StyleCop
 StyleCopReport.xml
@@ -66,7 +85,11 @@ StyleCopReport.xml
 # Files built by Visual Studio
 *_i.c
 *_p.c
+<<<<<<< HEAD
 *_h.h
+=======
+*_i.h
+>>>>>>> 77dd8fb71b334bd07ce880a0de69391b768348eb
 *.ilk
 *.meta
 *.obj
@@ -83,7 +106,10 @@ StyleCopReport.xml
 *.tlh
 *.tmp
 *.tmp_proj
+<<<<<<< HEAD
 *_wpftmp.csproj
+=======
+>>>>>>> 77dd8fb71b334bd07ce880a0de69391b768348eb
 *.log
 *.vspscc
 *.vssscc
@@ -186,8 +212,11 @@ PublishScripts/
 
 # NuGet Packages
 *.nupkg
+<<<<<<< HEAD
 # NuGet Symbol Packages
 *.snupkg
+=======
+>>>>>>> 77dd8fb71b334bd07ce880a0de69391b768348eb
 # The packages folder can be ignored because of Package Restore
 **/[Pp]ackages/*
 # except build/, which is used as an MSBuild target.
@@ -212,14 +241,21 @@ BundleArtifacts/
 Package.StoreAssociation.xml
 _pkginfo.txt
 *.appx
+<<<<<<< HEAD
 *.appxbundle
 *.appxupload
+=======
+>>>>>>> 77dd8fb71b334bd07ce880a0de69391b768348eb
 
 # Visual Studio cache files
 # files ending in .cache can be ignored
 *.[Cc]ache
 # but keep track of directories ending in .cache
+<<<<<<< HEAD
 !?*.[Cc]ache/
+=======
+!*.[Cc]ache/
+>>>>>>> 77dd8fb71b334bd07ce880a0de69391b768348eb
 
 # Others
 ClientBin/
@@ -232,7 +268,11 @@ ClientBin/
 *.publishsettings
 orleans.codegen.cs
 
+<<<<<<< HEAD
 # Including strong name files can present a security risk
+=======
+# Including strong name files can present a security risk 
+>>>>>>> 77dd8fb71b334bd07ce880a0de69391b768348eb
 # (https://github.com/github/gitignore/pull/2483#issue-259490424)
 #*.snk
 
@@ -263,9 +303,12 @@ ServiceFabricBackup/
 *.bim.layout
 *.bim_*.settings
 *.rptproj.rsuser
+<<<<<<< HEAD
 *- [Bb]ackup.rdl
 *- [Bb]ackup ([0-9]).rdl
 *- [Bb]ackup ([0-9][0-9]).rdl
+=======
+>>>>>>> 77dd8fb71b334bd07ce880a0de69391b768348eb
 
 # Microsoft Fakes
 FakesAssemblies/
@@ -301,8 +344,17 @@ paket-files/
 # FAKE - F# Make
 .fake/
 
+<<<<<<< HEAD
 # CodeRush personal settings
 .cr/personal
+=======
+# JetBrains Rider
+.idea/
+*.sln.iml
+
+# CodeRush
+.cr/
+>>>>>>> 77dd8fb71b334bd07ce880a0de69391b768348eb
 
 # Python Tools for Visual Studio (PTVS)
 __pycache__/
@@ -327,7 +379,11 @@ __pycache__/
 # OpenCover UI analysis results
 OpenCover/
 
+<<<<<<< HEAD
 # Azure Stream Analytics local run output
+=======
+# Azure Stream Analytics local run output 
+>>>>>>> 77dd8fb71b334bd07ce880a0de69391b768348eb
 ASALocalRun/
 
 # MSBuild Binary and Structured Log
@@ -336,6 +392,7 @@ ASALocalRun/
 # NVidia Nsight GPU debugger configuration file
 *.nvuser
 
+<<<<<<< HEAD
 # MFractors (Xamarin productivity tool) working folder
 .mfractor/
 
@@ -350,3 +407,7 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
+=======
+# MFractors (Xamarin productivity tool) working folder 
+.mfractor/
+>>>>>>> 77dd8fb71b334bd07ce880a0de69391b768348eb
